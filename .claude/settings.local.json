@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp /Users/firedev/Downloads/dlev/13.jpeg test.jpeg)",
+      "Bash(sips --cropOffset 420 480 -c 600 543 test.jpeg --out crop_test.jpeg)",
+      "Bash(sips -g pixelWidth -g pixelHeight crop_test.jpeg)",
+      "Bash(sips -Z 320 /Users/firedev/Downloads/dlev/logo.jpeg --out /Users/firedev/Documents/projetos/dlev/assets/images/logo-320.jpg)",
+      "Bash(sips -Z 64 /Users/firedev/Downloads/dlev/logo.jpeg --out /Users/firedev/Documents/projetos/dlev/assets/images/favicon.png)",
+      "Bash(sips -Z 180 /Users/firedev/Downloads/dlev/logo.jpeg --out /Users/firedev/Documents/projetos/dlev/assets/images/apple-touch-icon.png)",
+      "Bash(sips --cropOffset 1000 45 -c 320 320 /Users/firedev/Downloads/dlev/2.jpeg --out /Users/firedev/Documents/projetos/dlev/assets/images/marmita-1.jpg)",
+      "Bash(sips --cropOffset 1000 400 -c 320 320 /Users/firedev/Downloads/dlev/2.jpeg --out /Users/firedev/Documents/projetos/dlev/assets/images/marmita-2.jpg)",
+      "Bash(sips --cropOffset 762 25 -c 540 1070 /Users/firedev/Downloads/dlev/2.jpeg --out /Users/firedev/Documents/projetos/dlev/assets/images/hero-tubs.jpg)",
+      "Bash(sips -g pixelWidth -g pixelHeight /Users/firedev/Documents/projetos/dlev/assets/images/hero-tubs.jpg)",
+      "Bash(pkill -f \"http.server 8777\")",
+      "Bash(awk '{print $1}')",
+      "Bash(cat)",
+      "Bash(node /tmp/emojitest.mjs)"
+    ]
+  }
+}

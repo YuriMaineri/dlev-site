@@ -1,0 +1,19 @@
+# =====================================================================
+# D'Lev — configuração da hospedagem (Apache)
+# =====================================================================
+# Garante que as páginas e scripts sejam entregues em UTF-8, para que
+# acentos (á, ã, ç...) e emojis apareçam corretamente — inclusive nas
+# mensagens enviadas para o WhatsApp.
+# (Se a sua hospedagem não for Apache, este arquivo é simplesmente ignorado.)
+
+AddDefaultCharset utf-8
+AddCharset utf-8 .html .css .js
+
+# Cache leve para imagens (site mais rápido). Opcional.
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/png  "access plus 30 days"
+  ExpiresByType text/css   "access plus 7 days"
+  ExpiresByType application/javascript "access plus 7 days"
+</IfModule>
